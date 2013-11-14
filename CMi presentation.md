@@ -14,18 +14,18 @@ I tried running XBMC for a long time but was very unhappy with it for many reaso
 
 So I started looking into fixing it. After all, it's a C++ project and I was a full time C++ coder at the time. Quickly realized that wasn't an option... lines of code:
 
-C/C++: 2M
-Shell: 328k
-m4: 111k
-XML: 102k
-HTML: 64k
-Assembly: 41k
-Make: 13k
-Pascal: 10k
-Python: 9k
-Objective-C: 7k
-Other: 27k
-Total: 2.7M
+* C/C++: 2M
+* Shell: 328k
+* m4: 111k
+* XML: 102k
+* HTML: 64k
+* Assembly: 41k
+* Make: 13k
+* Pascal: 10k
+* Python: 9k
+* Objective-C: 7k
+* Other: 27k
+* Total: 2.7M
 
 Excluding comments and blank lines!
 
@@ -97,12 +97,12 @@ Objective-C -> Django communication
 How much code?
 ==============
 
-Objective-C: 1.6k
-Python: 1k
-JavaScript: 1k
-HTML: 300
-CSS: 300
-Total: ~3k
+* Objective-C: 1.6k
+* Python: 1k
+* JavaScript: 1k
+* HTML: 300
+* CSS: 300
+* Total: ~3k
 
 
 Database handling
@@ -138,11 +138,11 @@ settings.CODE_CHANGED = 1
 
 AJAX poll:
 
-def changed_code(request):
-    from django.conf import settings
-    result = settings.CODE_CHANGED 
-    settings.CODE_CHANGED = 0
-    return HttpResponse(str(result))
+    def changed_code(request):
+        from django.conf import settings
+        result = settings.CODE_CHANGED 
+        settings.CODE_CHANGED = 0
+        return HttpResponse(str(result))
 
 
 Bits and Pieces
